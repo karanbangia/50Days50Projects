@@ -2,14 +2,16 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*very important keep everywhere*/
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     background-color: #333;
     color: #222;
-    margin: 0;
 }
 
 .container {
@@ -24,8 +26,10 @@ body {
 .container.show-nav {
     transform: rotate(-20deg);
 }
+
 .circle-container {
     position: fixed;
+    /*always be fixed*/
     top: -100px;
     left: -100px;
 }
@@ -35,7 +39,12 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    position: relative;
     transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
 }
 
 .circle button {
@@ -64,6 +73,11 @@ body {
     transform-origin: top left;
 }
 
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
 nav {
     position: fixed;
     bottom: 40px;
@@ -71,7 +85,7 @@ nav {
     z-index: 100;
 }
 
-.nav ul {
+nav ul {
     list-style-type: none;
     padding-left: 30px;
 }
@@ -101,6 +115,7 @@ nav ul li + li + li {
 
 .content img {
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .content {
@@ -120,4 +135,9 @@ nav ul li + li + li {
 .content p {
     color: #333;
     line-height: 1.5;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
