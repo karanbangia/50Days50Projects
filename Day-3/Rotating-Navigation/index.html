@@ -4,10 +4,54 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css"/>
-    <title>My Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
+    <title>Rotating Navigation</title>
 </head>
 <body>
-<h1>Project Starter</h1>
+<div class="container show-nav">
+    <div class="circle-container">
+        <div class="circle">
+            <button id="close">
+                <i class="fas fa-times"></i>
+            </button>
+            <button id="open">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Amazing Article</h1>
+        <small>Karan</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum enim et iure pariatur quae
+            sed suscipit totam veniam, voluptatem! Ad, aut consequuntur corporis culpa cum deleniti et explicabo
+            facere fugiat ipsa iste, magnam modi molestiae neque nobis quas rem sed sequi sunt vel! Deserunt,
+            doloremque, velit! Ab adipisci assumenda at culpa debitis deserunt dignissimos dolores earum, facilis
+            incidunt minima molestiae numquam odit officiis optio qui quibusdam rerum saepe sit, voluptas? A
+            adipisci animi architecto aspernatur, dignissimos distinctio eaque eligendi esse explicabo fugiat id
+            inventore iste laboriosam magnam maiores natus nemo non provident quod ratione reiciendis temporibus
+            velit voluptatem voluptatum.</p>
+        <h3>My Dog</h3>
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+             alt="dog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam architecto aspernatur
+            autem culpa cumque deleniti doloribus enim expedita fuga id incidunt inventore ipsa modi, molestiae
+            mollitia nemo neque, nesciunt nobis officia perferendis provident qui quidem quisquam reiciendis rem
+            repellendus tenetur totam velit veniam voluptas voluptate voluptatum! At dolor dolore dolorum enim iusto
+            mollitia nam pariatur possimus sit veritatis. Aliquid aperiam atque aut, consectetur consequuntur
+            corporis, ea eligendi maiores quidem repellat velit, veniam voluptates.</p>
+    </div>
+
+</div>
+<nav>
+    <ul>
+        <li><i class="fas fa-home"></i></li>
+        <li><i class="fas fa-user-alt"></i></li>
+        <li><i class="fas fa-envelope"></i></li>
+    </ul>
+</nav>
+
 <script src="script.js"></script>
 </body>
 </html>
