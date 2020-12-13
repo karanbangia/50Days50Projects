@@ -23,6 +23,9 @@ body {
     height: 50px;
 }
 .search .input{
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
     background-color: #fff;
     border: 0;
     font-size: 18px;
@@ -31,7 +34,7 @@ body {
     width: 50px;
     transition: width 0.3s ease;
 }
-.btn{
+.search .btn{
     background-color: #fff;
     border: 0;
     cursor: pointer;
