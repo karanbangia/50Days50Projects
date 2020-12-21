@@ -12,7 +12,7 @@ body {
 
     height: 100vh;
     /*important for center of page alignment*/
-    overflow: hidden;
+    overflow-x: hidden;
     /*scrollbar wont be visible by default*/
     margin: 0;
 }
